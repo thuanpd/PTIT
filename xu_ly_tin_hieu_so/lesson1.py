@@ -1,5 +1,18 @@
 import numpy as np
 import matplotlib.pyplot as matplotlib
+
+# a. Vẽ tín hiệu z = x + y trong miền thời gian.
+
+matplotlib.figure(figsize=(10, 4))
+matplotlib.plot(time, combined_signal, label="z = sin(2π8t) + sin(2π30t)")
+matplotlib.title("Tín hiệu tổng hợp trong miền thời gian")
+matplotlib.xlabel("Thời gian (s)")
+matplotlib.ylabel("Biên độ")
+matplotlib.legend()
+matplotlib.grid()
+matplotlib.xlim(0, 1)
+matplotlib.show()
+
 # b.Vẽ biểu đồ phổ của z dùng biến đổi Fourier nhanh (fast Fourier transform)
 # trong phần mềm Matlab/Python (hoặc các ngôn ngữ khác). 
 sampling_rate = 250  
